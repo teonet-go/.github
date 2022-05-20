@@ -1,3 +1,3 @@
-# Teonet v4
+# Teonet v5
 
-Teonet v4 pure golang realisation of Trudp and Teonet
+Teonet v5 pure golang realisation of Trudp and Teonet
