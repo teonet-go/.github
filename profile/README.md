@@ -1,3 +1,3 @@
 # Teonet v5
 
-Teonet v5 pure golang realisation of Trudp and Teonet
+Teonet v5 is pure Golang implementation of Trudp and Teonet librarys and Teonet applications
