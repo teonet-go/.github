@@ -11,7 +11,7 @@ Teonet is communication Go package to create network / cloud transport. Teonet u
 - P2P: In main network schema all Teonet peers are connected point to point. The communication between peers are going without central server. We need only one peer with dedicated IP called rauth to connect peers to each other.
 - Address: The peers has its own names (text coded name) which is exclusive Teonet network address.
 - Messages: The main users communication protocol is message. The message can be send to any peer by its name and can has any length and format.
-- Reliability: All messages are reliability.
+- Reliability: All messages are reliable.
 
 ## Networking with Teonet
 
