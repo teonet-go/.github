@@ -4,13 +4,17 @@ Teonet v5 is pure Golang implementation of Trudp and Teonet librarys and Teonet 
 
 ![Teont Network](https://github.com/teonet-go/.github/blob/main/profile/network.png?raw=true)
 
-Teonet is communication Go package to create network / cloud transport. Teonet uses UDP to communicate between its network peers. This UDP packets are encrypted with unique keys. Teonet uses own UDP based protocol called Teonet Reliable UDP (TRU) for real time communications that allows sending messages with low latency and provides protocol reliability features.
+Teonet is designed to create client-server systems and build networks for server applications operating within a microservice architecture. To do this, Teonet creates a network / cloud transport between its members. This transport uses UDP for communication between network peers. UDP packets are encrypted with unique keys. Teonet uses its own UDP-based protocol called Teonet Reliable UDP (TRU) for real-time communication, which allows low latency messages to be sent and protocol reliability features.
 
 ## The main Teonet capabilities
 
-- P2P: In main network schema all Teonet peers are connected point to point. The communication between peers are going without central server. We need only one peer with dedicated IP called rauth to connect peers to each other.
-- Address: The peers has its own names (text coded name) which is exclusive Teonet network address.
-- Messages: The main users communication protocol is message. The message can be send to any peer by its name and can has any length and format.
+- P2P: In main network schema all Teonet peers are connected point to point. The communication between peers are going without central server. We need only one peer with dedicated IP called rauth to connect peers to each other;
+- Address: The peers has its own names (text coded name) which is exclusive Teonet network address;
+- Messages: The main users communication protocol is message. The message can be send to any peer by its name and can has any length and format;
+- Command mode: Messages can has digital number of command;
+- API: Teonet API included command name, command number, command descriptions and description of input and output parameter;
+- Monitor: Teonet monior allow get application realtime statistic;
+- Deploy: Teonet deploy system installs and mange Teonet applications on its hosts;
 - Reliability: All messages are reliable.
 
 ## Networking with Teonet
@@ -23,7 +27,7 @@ Learn how to start building software with Teonet.
 
 ### Create simplest Teonet client application
 
-In this application we
+In this application we:
 
 - Show Teonet application logo
 - Start Teonet client
@@ -109,6 +113,12 @@ func main() {
 Teonet client and server application use the same functions. And there is not diferents between client and server. If aplication connect to - then it is client. If apllication wait for connections - then it is server.
 
 So lets create our own echo server.
+In this application we:
+
+- Show Teonet application logo
+- Start Teonet client, with reader to receive and process incoming messages
+- Connect to Teonet
+- Print application address
 
 ```go
 package main
