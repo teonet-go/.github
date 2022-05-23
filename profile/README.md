@@ -25,7 +25,7 @@ It may be done any number of Teonet networks. Each Teonet network has it's own m
 
 Learn how to start building software with Teonet.
 
-### Create simplest Teonet client application
+### Teonet simplest client application
 
 In this application we:
 
@@ -108,7 +108,7 @@ func main() {
 }
 ```
 
-### Create simplest Teonet server application
+### Teonet simplest server application
 
 Teonet client and server application use the same functions. And there is not diferents between client and server. If aplication connect to - then it is client. If apllication wait for connections - then it is server.
 
@@ -186,7 +186,7 @@ func main() {
 }
 ```
 
-When you start this Teonet application (`$ go run .`) it print its unical address: 
+When you start this Teonet application (`$ go run .`) it print its unical address:
 
 ```
 Connected to teonet, this app address: OUPdQ35M0x53ScObAMWiLaDv1Kn6q7KdO61
@@ -195,3 +195,5 @@ Connected to teonet, this app address: OUPdQ35M0x53ScObAMWiLaDv1Kn6q7KdO61
 Use this address in your echo client created in previouse example. Replace echoServer constant value with this echo server address and start client in new terminal window.
 
 So you have created your first Teonet client / server applications. You can run this applications in any hosts, they connect to Teonet and than client connect to server P2P without select servers or clients IP.
+
+[>> Command mode](https://github.com/teonet-go/.github/blob/main/profile/command.md)
