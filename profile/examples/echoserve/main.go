@@ -14,7 +14,7 @@ const (
 
 func main() {
 
-	// Teonwt application logo
+	// Teonet application logo
 	teonet.Logo(appName, appVersion)
 
 	// Start Teonet client

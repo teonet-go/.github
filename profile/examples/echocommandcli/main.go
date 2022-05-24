@@ -16,7 +16,7 @@ const (
 )
 
 func main() {
-	// Teonwt application logo
+	// Teonet application logo
 	teonet.Logo(appName, appVersion)
 
 	// Start Teonet client
@@ -52,6 +52,9 @@ func main() {
 			return
 		},
 	)
+	if err != nil {
+		panic("can't connect to server, error: " + err.Error())
+	}
 
 	// Send messages to echo command server
 	for {
