@@ -11,7 +11,7 @@ const (
 	appName       = "Teonet echo command client sample application"
 	appShort      = "teoechocommandcli"
 	appVersion    = "0.0.1"
-	echoComServer = "WXJfYLDEtg6Rkm1OHm9I9ud9rR6qPlMH6NE"
+	echoComServer = "TNjrzlq9y6azlJoISI6YpwAktKz7mdS5V8c" // "WXJfYLDEtg6Rkm1OHm9I9ud9rR6qPlMH6NE"
 	sendDelay     = 3000
 )
 
