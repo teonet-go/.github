@@ -176,4 +176,4 @@ So you have created your first Teonet client / server applications. You can run 
 
 Read next: [>> Command mode](command.md#command-message-mode)
 
-Go to Home: [Table of Contents <<](README.md#table-of-Contents)
+Go to Home: [Table of Contents <<](https://github.com/teonet-go#table-of-Contents)

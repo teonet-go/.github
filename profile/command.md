@@ -206,4 +206,4 @@ Use this address in your Echo Command Client created in previouse example. Repla
 
 Read next: [>> API mode](api.md#api-message-mode)
 
-Go to Home: [Table of Contents <<](README.md#table-of-Contents)
+Go to Home: [Table of Contents <<](https://github.com/teonet-go#table-of-Contents)

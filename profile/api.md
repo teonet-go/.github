@@ -92,3 +92,93 @@ This example looks like our simple and command clients, except for the Send Mess
 Let's create an API Server to see the difference in a api mode server and use it to receive commands.
 
 ### Teonet api mode server application
+
+In this application we:
+
+- Show Teonet application logo
+- Start Teonet client
+- Create Teonet API
+- Create API command "hello"
+- Connect to Teonet
+- Print application address
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/kirill-scherba/teonet"
+)
+
+const (
+	appName    = "Teonet api server application"
+	appShort   = "teoechoapiserve"
+	appLong    = "This description of Teonet api server application"
+	appVersion = "0.0.1"
+)
+
+func main() {
+
+	// Teonet application logo
+	teonet.Logo(appName, appVersion)
+
+	// Start Teonet client
+	teo, err := teonet.New(appShort)
+	if err != nil {
+		panic("can't init Teonet, error: " + err.Error())
+	}
+
+	// Create Teonet API
+	api := teo.NewAPI(appName, appShort, appLong, appVersion)
+
+	// Create API command "hello"
+	cmdApi := teonet.MakeAPI2()
+	cmdApi.
+		SetCmd(api.Cmd(129)).                 // Command number cmd = 129
+		SetName("hello").                     // Command name
+		SetShort("get 'hello name' message"). // Short description
+		SetUsage("<name string>").            // Usage (input parameter)
+		SetReturn("<answer string>").         // Return (output parameters)
+		// Command reader (execute when command received)
+		SetReader(func(c *teonet.Channel, p *teonet.Packet, data []byte) bool {
+			fmt.Printf("got from %s, \"%s\", len: %d, id: %d, tt: %6.3fms\n",
+				c, data, len(data), p.ID(),
+				float64(c.Triptime().Microseconds())/1000.0,
+			)
+			data = append([]byte("Hello "), data...)
+			api.SendAnswer(cmdApi, c, data, p)
+			return true
+		}).SetAnswerMode(teonet.DataAnswer)
+	api.Add(cmdApi)
+
+	// Add API reader
+	teo.AddReader(api.Reader())
+
+	// Print API
+	fmt.Printf("API description:\n\n%s\n\n", api.Help())
+
+	// Connect to Teonet
+	err = teo.Connect()
+	if err != nil {
+		panic("can't connect to Teonet, error: " + err.Error())
+	}
+
+	// Print application address
+	addr := teo.Address()
+	fmt.Println("Connected to teonet, this app address:", addr)
+
+	// Wait forever
+	select {}
+}
+```
+
+When you start this Teonet application ($ go run .) it print its unical address:
+
+```
+Connected to teonet, this app address: OUPdQ35M0x53ScObAMWiLaDv1Kn6q7KdO61
+```
+
+Use this address in your Echo Api Client created in [previouse example](#teonet-api-mode-client-application). Replace apiServer constant value with this Echo API Server address and start client in new terminal window.
+
+Go to Home: [Table of Contents <<](https://github.com/teonet-go#table-of-Contents)
