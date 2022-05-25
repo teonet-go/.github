@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kirill-scherba/teonet"
+	"github.com/teonet-go/teonet"
 )
 
 const (
