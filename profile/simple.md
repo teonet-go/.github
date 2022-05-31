@@ -86,6 +86,8 @@ func main() {
 }
 ```
 
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/echocli/main.go)
+
 ### Teonet simple server application
 
 Teonet client and server application use the same functions. And there is not diferents between client and server. If aplication connect to - then it is client. If apllication wait for connections - then it is server.
@@ -163,6 +165,8 @@ func main() {
 	select {}
 }
 ```
+
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/echoserve/main.go)
 
 When you start this Teonet application (`$ go run .`) it print its unical address:
 

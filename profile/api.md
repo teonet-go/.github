@@ -87,6 +87,8 @@ func main() {
 }
 ```
 
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/apicli/main.go)
+
 This example looks like our simple and command clients, except for the Send Messages section. In this example we send message with `apicli.SendTo("hello", data, func(data []byte, err error) { })`. It mean we send command "hello" with data "Developer!" to 'apiServer' server. Here we use text command name instead of number, and receive answer in sendTo function insted of ConnectTo as in simple and command clients.
 
 Let's create an API Server to see the difference in a api mode server and use it to receive commands.
@@ -172,6 +174,8 @@ func main() {
 	select {}
 }
 ```
+
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/apiserve/main.go)
 
 When you start this Teonet application ($ go run .) it print its unical address:
 

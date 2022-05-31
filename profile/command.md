@@ -101,6 +101,8 @@ func main() {
 }
 ```
 
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/commandcli/main.go)
+
 This example looks like our first client, except for the Send Messages section. In this example we send message with `teo.Command(129, data).SendTo(echoComServer)`. It mean we send command 129 with data "Teonet developer!" to 'echoComServer' server.
 
 Let's create an Echo Command Server to see the difference in a command mode server and use it to receive commands.
@@ -193,6 +195,8 @@ func main() {
 	select {}
 }
 ```
+
+[See this code on Github](https://github.com/teonet-go/teonet-examples/blob/main/commandserve/main.go)
 
 This sample similar to the Simple Echo Server sample. Here we change Main application reader, we add command parser: `cmd := teo.Command(p.Data())` and switch by command.
 
