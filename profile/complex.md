@@ -2,6 +2,10 @@
 
 In this example we create several [Teonet](https://github.com/teonet-go) microservices to show how to create client-server applications using Teonet Microserive Applications.
 
+<p align="center">
+<img src="https://github.com/teonet-go/.github/blob/main/profile/microservices.jpg?raw=true" />
+</p>
+
 ## Microservice Description
 
 Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams.
@@ -24,22 +28,42 @@ Teonet is designed to create client-server systems and build networks for server
 
 ## This Sample Description
 
-In this sample we have created three new Teonet Microservice Applications.
+In this sample we have created three new Teonet Microservice Applications and use one existing Application.
 
-1. The Teofortune Application
+1.  Fortune Server Application
 
-   This is simple [Teonet](https://github.com/teonet-go/teonet) micriservice application which return linux fortune messages. The [fortune](https://linux.die.net/man/6/fortune) application should be installed first.
+    This is simple [Teonet](https://github.com/teonet-go/teonet) micriservice application which return linux fortune messages. The linux [fortune](https://linux.die.net/man/6/fortune) application should be installed first.
 
-   [Teofortune](https://github.com/teonet-go/teofortune)
+    [See Source](https://github.com/teonet-go/teofortune)
 
-2. The Teofortune-tg Application
+2.  Telegram Bot Client Application
 
-   This is simple [Teonet](https://github.com/teonet-go/teonet) telegram-bot micriservice application which get fortune message from [Teonet Fortune](https://github.com/teonet-go/teofortune) microservice and show it in Telegram.
+    This is simple [Teonet](https://github.com/teonet-go/teonet) telegram-bot micriservice application which get fortune message from Teonet [Fortune](fortune-server-application) microservice and show it in Telegram.
 
-   [Teofortune-tg](https://github.com/teonet-go/teofortune-tg)
+    This Telegram bot: [@teofortune](https://t.me/teofortune_bot)
 
-3. The Teofortune-web Application
+    [See Source](https://github.com/teonet-go/teofortune-tg)
 
-   This is simple [Teonet](https://github.com/teonet-go/teonet) web-server microservice application which get fortune message from [Teonet Fortune](https://github.com/teonet-go/teofortune) microservice and show it in the site web page.
+3.  Web Site Application
 
-   [Teofortune-web](https://github.com/teonet-go/teofortune-web)
+    This is simple [Teonet](https://github.com/teonet-go/teonet) web-server microservice application which get fortune message from [Teonet Fortune](https://github.com/teonet-go/teofortune) microservice and show it in the site web page.
+
+    This Website URL: http://fortune.teonet.dev
+
+    [Teofortune-web](https://github.com/teonet-go/teofortune-web)
+
+4.  Teonet CLI Application
+
+    Install Teonet cli application:
+
+        go install github.com/teonet-go/teonet ./cmd/teonet
+
+    Run the Teonet cli application:
+
+        teonet
+
+    In the Teonet cli application print commands:
+
+        connectto 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF
+        api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF
+        api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF forta
