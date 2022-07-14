@@ -67,3 +67,7 @@ In this sample we have created three new Teonet Microservice Applications and us
         connectto 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF
         api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF
         api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF forta
+
+## Licence
+
+[BSD](LICENSE)
