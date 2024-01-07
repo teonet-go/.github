@@ -68,6 +68,18 @@ In this sample we have created three new Teonet Microservice Applications and us
         api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF
         api 8agv3IrXQk7INHy5rVlbCxMWVmOOCoQgZBF forta
 
+5. Teonet GUI Application
+
+   This is simple [Teonet](https://github.com/teonet-go/teonet) GUI apllication creating using fyne-io package. It get fortune message from [Teonet Fortune](https://github.com/teonet-go/teofortune) microservice and show it in the gui page.
+
+   [Teofortune-gui](https://github.com/teonet-go/teofortune-gui)
+
+6. Teonet wasm web application.
+
+    There is [Teoproxy](https://github.com/teonet-go/teoproxy) client server packages to connect golang wasm applications with Teonet peers. It provides a websocket client server packages that can be used to connect wasm application with it own web server which runs Teonet and connects to teonet peers used in wasm application.
+
+    [See this example Description and Source](https://github.com/teonet-go/teoproxy)
+
 ## Licence
 
 [BSD](LICENSE)
