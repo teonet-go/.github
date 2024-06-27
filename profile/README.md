@@ -2,7 +2,7 @@
 
 Teonet v5 is pure Golang implementation of Trudp and Teonet libraries and Teonet applications
 
-![Teont Network](https://github.com/teonet-go/.github/blob/main/profile/network.png?raw=true)
+![Teonet Network](https://github.com/teonet-go/.github/blob/main/profile/network.png?raw=true)
 
 Teonet is designed to create client-server systems and build networks for server applications operating within a microservice architecture. To do this, Teonet creates a network / cloud transport between its members. This transport uses UDP for communication between network peers. UDP packets are encrypted with unique keys. Teonet uses its own UDP-based protocol called Teonet Reliable UDP (TRU) for real-time communication, which allows low latency messages to be sent and protocol reliability features.
 
@@ -24,7 +24,7 @@ It may be done any number of Teonet networks. Each Teonet network has it's own m
 ## Get started
 
 To learn how to start building software with Teonet use the
-[>> Simple message mode](profile/simple.md#simple-message-mode) example.
+[>> Simple message mode](simple.md#simple-message-mode) example.
 
 ## Table of Contents
 
@@ -32,19 +32,19 @@ To learn how to start building software with Teonet use the
 - [The main Teonet capabilities](#the-main-teonet-capabilities)
 - [Networking with Teonet](#networking-with-teonet)
 - [Get started examples](#get-started)
-  - [Simple message mode](profile/simple.md#simple-message-mode)
-    - [Simple Clent](profile/simple.md#teonet-simple-client-application)
-    - [Simple Server](profile/simple.md#teonet-simple-server-application)
-  - [Command message mode](profile/command.md#command-message-mode)
-    - [Command mode Clent](profile/command.md#teonet-command-mode-client-application)
-    - [Command mode Server](profile/command.md#teonet-command-mode-server-application)
-  - [API message mode](profile/api.md#api-message-mode)
-    - [API Clent](profile/api.md#teonet-api-mode-client-application)
-    - [API Server](profile/api.md#teonet-api-mode-server-application)
-- [Complex Example](profile/complex.md)
-  - [Microservice Description](profile/complex.md#microservice-description)
-  - [Client-Server Description](profile/complex.md#client-server-description)
-  - [This Sample Description](profile/complex.md#this-sample-description)
+  - [Simple message mode](simple.md#simple-message-mode)
+    - [Simple Clent](simple.md#teonet-simple-client-application)
+    - [Simple Server](simple.md#teonet-simple-server-application)
+  - [Command message mode](command.md#command-message-mode)
+    - [Command mode Clent](command.md#teonet-command-mode-client-application)
+    - [Command mode Server](command.md#teonet-command-mode-server-application)
+  - [API message mode](api.md#api-message-mode)
+    - [API Clent](api.md#teonet-api-mode-client-application)
+    - [API Server](api.md#teonet-api-mode-server-application)
+- [Complex Example](complex.md)
+  - [Microservice Description](complex.md#microservice-description)
+  - [Client-Server Description](complex.md#client-server-description)
+  - [This Sample Description](complex.md#this-sample-description)
 - [Teonet-C Libray](https://github.com/teonet-go/teonet-c#teonet-c)
 - [Teotun: Encrypted tunnel between hosts without public IPs](https://github.com/teonet-go/teotun#teonet-tunnel)
 
